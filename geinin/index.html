@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>芸人データベース</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <article class="container mt-3 pt-5 pb-5 text-center">
+                
+        <h1 class="text-center"><img src="img/title.png" alt="芸人データベース"></h1> 
+        
+        <form action="search.php" method="post" class="text-center">
+             <p class="mt-2"><strong class="text-danger mr-1">コンビ名</strong>か<strong class="text-secondary ml-1 mr-1">個人名</strong>を入れてください</p>
+             <p class="mt-2"><strong class="text-danger mr-1">事務所名</strong>でも検索可能です</p>
+             <p class="mt-4">入力例：日村、錦鯉、人力舎など</p>
+             <div class="form-group mt-2">
+               <input type="text" name="yourname" class="form-control offset-sm-4 col-sm-4">
+             </div>
+             <button type="submit" class="btn btn-primary">検索する</button>     
+             
+             <p class="mt-4">検索可能ユニット（個人名も可）</p>
+             <p class="mt-2 p-2 text-justify d-block small">ダウンタウン、ウッチャンナンチャン、さまぁ～ず、バナナマン、くりぃむしちゅー、キャイ～ン、ホンジャマカ、アンジャッシュ、雨上がり決死隊、ロンドンブーツ1号2号、出川哲朗、有吉弘行、ずん、TKO、霜降り明星、EXIT、宮下草薙、サンドウィッチマン、劇団ひとり、ナイツ、オードリー、ミルクボーイ、アンタッチャブル、よゐこ、四千頭身、バカリズム、おぎやはぎ、カミナリ、山口智充、錦鯉（その他、順不同）</p>
+             <p class="mt-4">検索可能事務所</p>
+             <p class="mt-2 p-2 text-justify d-block small">吉本興業、ホリプロ、マセキ芸能社、ナチュラルエイト、浅井企画、ワタナベエンターテインメント、人力舎、太田プロダクション、サンミュージック、松竹芸能、グレープカンパニー、ケイダッシュ、ソニー・ミュージックアーティスツ</p>
+
+
+        </form>
+  </article>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+
+</body>
+</html>

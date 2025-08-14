@@ -1,0 +1,62 @@
+html {
+    font-size: 16px; 
+} 
+
+body{
+    background: url(../img/wood.jpg) no-repeat fixed;
+}
+
+@media only screen and (max-width: 1200px) {
+img { max-width: 100%; }
+}
+
+h3{
+ white-space: nowrap;
+ font-size:1.5rem!important;
+}
+
+
+p{
+    padding:0rem;
+    margin:0 auto;
+    margin-bottom: 0rem!important;
+    line-height:1.2rem;
+    width: 70%;
+}
+
+@media screen and (max-width: 640px) {/* スマホ*/
+html {
+    font-size: 16px; 
+    } 
+    p{
+       font-size: 16px;
+       width: 95%;
+    }
+}
+
+section{
+    display: block;
+}
+
+.container{
+     background:url(../img/roope.png) no-repeat fixed center  ,rgba(255,255,255,0.5);
+     background-size: contain;
+}
+
+.inner-box{
+    border:1px solid #f1b606;
+}
+
+
+.table-striped {
+    background-color: #faffee;
+}
+
+.return{
+    width:100px;
+}
+
+.d-block{
+     background:rgba(255,255,150,0.6);   
+}
+
