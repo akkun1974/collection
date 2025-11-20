@@ -612,7 +612,7 @@ background:rgba(255,255,255,0.7);
 }
 
 .res-table td img{
-width:49%;
+/* width:49%; */
 }
 
 .res-table td img:nth-child(2){
@@ -630,13 +630,43 @@ margin-left:1%;
 
 /*プロフィール画像*/
 
+ @media (min-width: 1024px) {
+	.self{
+		width: 700px;
+	}
+ }
+
 .self{
-text-align:center;
+	display: flex;
 }
 
-.self img{
-width:50%;
+@media (max-width: 768px){
+	.self{
+		flex-direction: column;
+	}
 }
+
+
+.self_img{
+	width: 49%;
+}
+
+
+@media (max-width: 768px) {
+	.self_img{
+	width: 100%;
+	}
+}
+
+.slideimg img{
+	width: 100%;
+}
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -669,7 +699,7 @@ width:50%;
 	}
 
 	.res-table td img{
-	width:100%;
+	/* width:100%; */
 	}
 
 	.res-table td img:nth-child(2){
@@ -678,7 +708,7 @@ width:50%;
 
 	/*画像*/
 	.self img{
-	width:100%;
+	/* width:100%; */
 	}
 
 	section{
@@ -889,4 +919,65 @@ width:50%;
 
 .sns-icon li:first-child{
 	padding-right: 20px;
+}
+
+
+/* ------------------------------------------------------------------------------
+	スライドショー
+-------------------------------------------------------------------------------*/
+/* スライダー全体のスタイル */
+.slider-container {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+}
+/* 各スライド画像のスタイル */
+.slideimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    animation: fadeInOut 6s infinite;
+    transition: opacity 1.5s ease-in-out;
+}
+/* 最初の画像だけ親要素の高さを確保させる */
+.slideimg:nth-child(1) {
+    position: relative;
+    animation-delay: 0s;
+}
+/* 2枚目の画像のアニメーション遅延 */
+.slideimg:nth-child(2) {
+    animation-delay: 3s;
+}
+/* フェードイン・アウトのアニメーション */
+@keyframes fadeInOut {
+    0%   { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+/* 画像の表示調整 */
+.slideimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* 再生ボタン */
+.saisei{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 20%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+	.saisei{
+		width: 20%;
+	}
 }
